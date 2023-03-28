@@ -1,3 +1,26 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 content {
     width: 100%;
     height: auto;
@@ -15,6 +38,7 @@ header {
     height: 200px;
     grid-area: header;
     background: #EEEEEE;
+    text-align: left;
 }
 
 nav {
@@ -29,14 +53,19 @@ nav {
     background: rgba(240, 240, 240, 0.7);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .img_container {
-    width: 417px;
-    height: 528px;
-    margin: 15px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgb(117, 117, 117);
+    padding: 20px;
+}
+
+.img_container img{
+    height: 300px;
+    width: auto;
 }
 
 footer {
