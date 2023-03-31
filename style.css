@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -7,7 +11,7 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     font-size: 1.3em;
 }
 
@@ -31,6 +35,7 @@ content {
         "header header header"
         "nav nav nav"
         ". sector ."
+        "angle angle angle"
         "footer footer footer";
 }
 
@@ -47,7 +52,7 @@ nav {
     background: #A5A5A5;
 }
 
-#sector {
+section {
     height: auto;
     grid-area: sector;
     background: rgba(240, 240, 240, 0.7);
@@ -63,9 +68,10 @@ nav {
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
 
-.img_container img{
+.img_container img {
     height: 300px;
     width: auto;
 }
@@ -76,7 +82,7 @@ img {
     border: 3px solid rgb(141, 141, 141);
 }
 
-.mini_img{
+.mini_img {
     width: 150px;
     height: 150px;
 }
@@ -84,6 +90,14 @@ img {
 footer {
     height: 300px;
     grid-area: footer;
+    background: #D9D9D9;
+
+}
+
+#angle {
+    grid-area: angle;
+    height: 300px;
+    transform: skew(85deg);
     background: #D9D9D9;
 }
 
@@ -95,3 +109,31 @@ footer {
 .text {
     margin: 20px;
 }
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+ text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    margin: 10px;
+    width: 250px;
+    padding: 11px;
+    display: inline;
+}
+li:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+ul li a {padding: 10px}
