@@ -3,12 +3,16 @@
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 h1, h2, h3 {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4em;
 }
 
 h2 {
@@ -25,6 +29,11 @@ a {
     color: #000000;
 }
 
+.title {
+    margin: 20px 0 0 20px;
+    line-height: 1em;
+}
+
 content {
     width: 100%;
     height: auto;
@@ -35,27 +44,27 @@ content {
         "header header header"
         "nav nav nav"
         ". sector ."
-        "angle angle angle"
         "footer footer footer";
 }
 
 header {
     height: 200px;
     grid-area: header;
-    background: #EEEEEE;
+    background-image: linear-gradient(rgb(201, 201, 214), #EEEEEE);
     text-align: left;
 }
 
 nav {
     height: 60px;
     grid-area: nav;
-    background: #A5A5A5;
+    background: #ffffff;
+    margin-bottom: 6px;
 }
 
 section {
     height: auto;
     grid-area: sector;
-    background: rgba(240, 240, 240, 0.7);
+    background-color: rgba(240, 240, 240, 0.7);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -64,11 +73,13 @@ section {
 .img_container {
     background-color: #FFFFFF;
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgb(117, 117, 117);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
+    overflow-wrap: break-word;
+    inline-size: 340px;
+    transition: ease-in-out 0.2s;
 }
 
 .img_container img {
@@ -76,10 +87,15 @@ section {
     width: auto;
 }
 
+.img_container_big{
+scale: 103%;
+box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.25);
+}
+
 img {
     width: 600px;
     height: 600px;
-    border: 3px solid rgb(141, 141, 141);
+    /* border: 3px solid rgb(141, 141, 141); */
 }
 
 .mini_img {
@@ -92,13 +108,6 @@ footer {
     grid-area: footer;
     background: #D9D9D9;
 
-}
-
-#angle {
-    grid-area: angle;
-    height: 300px;
-    transform: skew(85deg);
-    background: #D9D9D9;
 }
 
 .sector2 {
@@ -117,23 +126,49 @@ nav {
 
 nav li {
  text-transform: uppercase;
+ font-weight: 600;
+ font-size: 1.5em;
 }
 
 ul {
     list-style: none;
     padding: 0;
 }
+
 li {
     text-align: center;
-    background-color: rgb(224, 224, 224);
     margin: 10px;
     width: 250px;
     padding: 11px;
     display: inline;
+    transition: ease-in-out 0.3s;
 }
+
+ul li:first-child{
+    margin-left:0;
+}
+
 li:hover {
-    background-color: red;
     cursor: pointer;
 }
 
+.biger_nav {
+    font-size: 1.8em;
+    color: #303030;
+    transition: ease-in-out 0.3s;
+}
+
 ul li a {padding: 10px}
+
+.nm_img{
+    width: 400px;
+    height: auto;
+}
+
+.secret {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15000px;
+}
