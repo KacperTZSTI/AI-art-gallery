@@ -19,3 +19,12 @@ for(let sect of sectors){
         sect.classList.remove("img_container_big");
     });
     } 
+
+let sites = ["apple_tree.html", "astronaut.html", "fish_graffiti.html", "ferrari.html", "velociraptor.html"]
+
+let rando = document.querySelector(".rando");
+
+rando.addEventListener("click", function(){
+let site = sites[3];
+
+});
