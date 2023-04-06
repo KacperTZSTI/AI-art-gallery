@@ -23,38 +23,53 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="history.html">History</a></li>
-    <li><a href="search.html">Search</a></li>
 </ul>
 
 </nav>
+<div class="search">
+    <form>
+        <label for="search">Search:</label><br>
+        <input for="search" id="search" name="search" list="sites">
+        <datalist id="sites">
+            <option value="Basic">
+            <option value="Weird">
+            <option value="Painting">
+            <option value="Cute">
+            <option value="Space">
+            <option value="Synthwave">
+          </datalist>
+          <!-- button zamiast input submit - żeby nie odświerzała sie strona, form obsługiwany przez js -->
+        <button type="button" value="Search" id="sub">Search</button>
+      </form>
+      <button type="button" class="rando">Random</button>
+</div>
 <section>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-
-<a href="astronaut.html"><div class="img_container"><img src="img/astronaut_on_mars_.png" alt="Astronaut on mars"><h2>An astronaut on mars</h2><p>A picture of an astronaut on mars</p></div></a>
-<a href="fish_graffiti.html"><div class="img_container"><img src="img/fish_graffiti.png" alt="Fish graffiti"><h2>Fish graffiti</h2><p>Graffiti of a fish</p></div></a>
-<a href="ferrari.html"><div class="img_container"><img src="img/ferrari_synthwave.png" alt="Synthwave ferrari"><h2>Ferrari</h2><p>A picture of a ferrari in the synthwave style.</p></div></a>
-<a href="velociraptor.html"><div class="img_container"><img src="img/velociraptor_in_a_supermarket_photorealistic_full_body.png" alt="Velociraptor"><h2>Velociraptor</h2><p>A velociraptor in a supermarket</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/1960_s_art_of_new_york.png" alt="1960's art of New York"><h2>New york</h2><p>1960's art of New York</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/donut_still_life_painting.png" alt="Donut"><h2>Donut</h2><p>Still art of a donut</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/astronauts_playing_jenga (2).png" alt="Astronauts playing jenga"><h2>Astronauts playing jenga</h2><p>Astronauts playing jenga</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/a_hamster_eating_a_watermelon.png" alt="An apple tree"><h2>Hamster</h2><p>A hamster eating a watermelon</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/AI.png" alt="An apple tree"><h2>AI</h2><p>A visualization of Artificial Inteligencce</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
-<a href="randomness.html"><div class="img_container"><img src="img/randomness.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container Basic"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="astronaut.html"><div class="img_container Space"><img src="img/astronaut_on_mars_.png" alt="Astronaut on mars"><h2>An astronaut on mars</h2><p>A picture of an astronaut on mars</p></div></a>
+    <a href="fish_graffiti.html"><div class="img_container Basic"><img src="img/fish_graffiti.png" alt="Fish graffiti"><h2>Fish graffiti</h2><p>A graffiti of a fish</p></div></a>
+    <a href="ferrari.html"><div class="img_container Synthwave"><img src="img/ferrari_synthwave.png" alt="Synthwave ferrari"><h2>Ferrari</h2><p>A picture of a ferrari in the synthwave style.</p></div></a>
+    <a href="velociraptor.html"><div class="img_container Weird"><img src="img/velociraptor_in_a_supermarket_photorealistic_full_body.png" alt="Velociraptor"><h2>Velociraptor</h2><p>A velociraptor in a supermarket</p></div></a>
+    <a href="new_york.html"><div class="img_container Basic"><img src="img/1960_s_art_of_new_york.png" alt="1960's art of New York"><h2>New york</h2><p>1960's art of New York</p></div></a>
+    <a href="donut.html"><div class="img_container Painting"><img src="img/donut_still_life_painting.png" alt="Donut"><h2>Donut</h2><p>Still art of a donut</p></div></a>
+    <a href="astronauts.html"><div class="img_container Space"><img src="img/astronauts_playing_jenga (2).png" alt="Astronauts playing jenga"><h2>Astronauts playing jenga</h2><p>Astronauts playing jenga</p></div></a>
+    <a href="hamster.html"><div class="img_container Cute"><img src="img/a_hamster_eating_a_watermelon.png" alt="An apple tree"><h2>Hamster</h2><p>A hamster eating a watermelon</p></div></a>
+    <a href="AI.html"><div class="img_container Basic"><img src="img/AI.png" alt="An apple tree"><h2>AI</h2><p>A visualization of Artificial Inteligencce</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="apple_tree.html"><div class="img_container"><img src="img/an_apple_tree.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
+    <a href="randomness.html"><div class="img_container"><img src="img/randomness.png" alt="An apple tree"><h2>An apple tree</h2><p>This is an apple tree</p></div></a>
 </section>
 <footer>
 Kacper Trzop 2023
 </footer>
 </content>   
-    
+
 <script src="script.js"></script>
 
 </body>
