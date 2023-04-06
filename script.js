@@ -20,7 +20,7 @@ for(let sect of sectors){
     });
     } 
 
-let sites = ["apple_tree.html", "astronaut.html", "fish_graffiti.html", "ferrari.html", "velociraptor.html", "AI.html", "donut.html", "hamster.html", "new_york.html", "astronauts.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html", "ferrari.html"]
+let sites = ["apple_tree.html", "astronaut.html", "fish_graffiti.html", "ferrari.html", "velociraptor.html", "AI.html", "donut.html", "hamster.html", "new_york.html", "astronauts.html"]
 
 let rando = document.querySelector(".rando");
 
