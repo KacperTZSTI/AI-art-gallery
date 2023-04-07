@@ -63,4 +63,3 @@ sub.addEventListener("click", function(){
             change[h].style.display = "block";
     }
     }}}});
-

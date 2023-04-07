@@ -22,11 +22,25 @@
     </div>
 </div>
 
-
+<div>
     <p>More:</p>
     <img class="mini_img" src="img/ferrari_synthwave (2).png">
-
+</div>
 <button type="button"><a href="index.html">&#60;&#60;</a></button>
+
+<script>
+
+    let minis = document.getElementsByClassName("mini_img");
+    let ab = document.querySelector(".ab_img");
+
+for(let mini of minis){
+    mini.addEventListener("click", function(){
+        let src1=ab.src;
+        ab.src = mini.src;
+        mini.src = src1;
+    })}
+
+</script>
 
 </body>
 </html>

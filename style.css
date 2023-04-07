@@ -175,6 +175,7 @@ img {
 .mini_img {
     width: 150px;
     height: 150px;
+    transition: ease-in-out 0.5s;
 }
 
 .nm_img {

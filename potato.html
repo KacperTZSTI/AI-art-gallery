@@ -13,30 +13,29 @@
 </head>
 <body>
 <div class="sector2">
-    <img class="ab_img" src="img/fish_graffiti.png" alt="An apple tree">
+    <img class="ab_img" src="img/potato_in_a_theater_watching_a_play.png" alt="Potato watching a play in a theater">
     <div class="text">
-        <h1>Fish graffiti</h1>
-        <p>A graffiti of a fish</p>
+        <h1>Potato in a theater</h1>
+        <p>Potato watching a play in a theater</p>
     </div>
 </div>
 <div>
     <p>More:</p>
-    <img class="mini_img" src="img/fish_graffiti (2).png">
+    <img class="mini_img" src="img/potato_in_a_theater_watching_a_play (2).png">
+    <img class="mini_img" src="img/potato_in_a_theater_watching_a_play (4).png">
 </div>
-    <button type="button"><a href="index.html">&#60;&#60;</a></button>
+<script>
 
-    <script>
+    let minis = document.getElementsByClassName("mini_img");
+    let ab = document.querySelector(".ab_img");
 
-        let minis = document.getElementsByClassName("mini_img");
-        let ab = document.querySelector(".ab_img");
+for(let mini of minis){
+    mini.addEventListener("click", function(){
+        let src1=ab.src;
+        ab.src = mini.src;
+        mini.src = src1;
+    })}
 
-    for(let mini of minis){
-        mini.addEventListener("click", function(){
-            let src1=ab.src;
-            ab.src = mini.src;
-            mini.src = src1;
-        })}
-
-    </script>
+</script>
 </body>
 </html>

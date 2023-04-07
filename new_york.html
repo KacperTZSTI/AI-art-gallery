@@ -19,14 +19,27 @@
         <p>A 1960's style art of New York</p>
     </div>
 </div>
-
+<div>
     <p>More:</p>
     <img class="mini_img" src="img/1960_s_art_of_new_york (2).png">
     <img class="mini_img" src="img/1960_s_art_of_new_york (3).png">
     <img class="mini_img" src="img/1960_s_art_of_new_york (4).png">
-
+</div>
     <button type="button"><a href="index.html">&#60;&#60;</a></button>
 
+    <script>
+
+        let minis = document.getElementsByClassName("mini_img");
+        let ab = document.querySelector(".ab_img");
+
+    for(let mini of minis){
+        mini.addEventListener("click", function(){
+            let src1=ab.src;
+            ab.src = mini.src;
+            mini.src = src1;
+        })}
+
+    </script>
 
 </body>
 </html>
