@@ -194,6 +194,27 @@ img {
     height: 480px;
 }
 
+.grey {
+    background-color: #EEEEEE;
+    padding: 10px;
+}
+
+.white {
+    padding: 10px;
+}
+
+#n1{
+    height: 400px;
+    width: auto;
+    margin-top: 10px;
+}
+
+#n2{
+    height: 400px;
+    width: auto;
+    margin-top: 10px;
+}
+
 .secret {
     width: 200px;
     display: flex;
