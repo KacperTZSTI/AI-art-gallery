@@ -35,7 +35,7 @@ console.log(site);
 
 let input = document.getElementById("search");
 let sub = document.getElementById("sub");
-let tags = ["Basic", "Weird", "Painting", "Cute", "Space", "Synthwave"]
+let tags = ["Basic", "Weird", "Art", "Cute", "Space", "Synthwave"]
 
 
 sub.addEventListener("click", function(){
@@ -64,7 +64,7 @@ sub.addEventListener("click", function(){
     }
     }}}});
 
-    // header
+    // nav
 let nav = document.querySelector('nav');
 console.log(nav.offsetHeight + 'px');
 
