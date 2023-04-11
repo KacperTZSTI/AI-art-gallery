@@ -148,6 +148,13 @@ ul li a {padding: 10px}
     transition: ease-in-out 0.3s;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    width: inherit;
+    z-index: 2;
+}
+
 button, input {
     border: 1px solid black;
     padding: 8px;
@@ -176,6 +183,10 @@ img {
     width: 150px;
     height: 150px;
     transition: ease-in-out 0.5s;
+}
+
+.mini_img :hover {
+    cursor: pointer
 }
 
 .nm_img {

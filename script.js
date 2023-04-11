@@ -63,3 +63,17 @@ sub.addEventListener("click", function(){
             change[h].style.display = "block";
     }
     }}}});
+
+    // header
+let nav = document.querySelector('nav');
+console.log(nav.offsetHeight + 'px');
+
+window.onscroll = function() {
+  if(window.scrollY > 200){
+  nav.classList.add('fixed');
+  document.body.style.paddingTop = nav.offsetHeight + 'px';
+  } else if (window.scrollY < 200){
+    nav.classList.remove('fixed');
+    document.body.style.paddingTop = '0px';
+  }
+}
